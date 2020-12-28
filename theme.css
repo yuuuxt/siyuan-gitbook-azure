@@ -1,19 +1,19 @@
 @font-face {
   font-family: "Noto Sans SC";
   font-style: normal;
-  src: url("NotoSansSC-Regular.otf") format('opentype');
+  src: url("src/NotoSansSC-Regular.otf") format('opentype');
 }
 
 @font-face {
   font-family: "JetBrains Mono";
   font-style:normal;
-  src: url("JetBrainsMono-Regular.woff2") format('woff2');
+  src: url("src/JetBrainsMono-Regular.woff2") format('woff2');
 }
 
 @font-face {
   font-family: "Noto Sans Mono CJK SC";
   font-style:normal;
-  src: url("NotoSansMonoCJKsc-Regular.otf") format('otf');
+  src: url("src/NotoSansMonoCJKsc-Regular.otf") format('otf');
 }
 
 :root {
