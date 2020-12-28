@@ -1,5 +1,7 @@
 # Gitbook Theme for Siyuan
 
+![preview](.\preview.png)
+
 Gitbook 风格的思源笔记主题, 参考了[Gitbook-Theme-for-Typora](https://github.com/16soundsofsilence/typora-gitbook-theme).
 
 > 仅基于默认daylight主题小改配色; 
