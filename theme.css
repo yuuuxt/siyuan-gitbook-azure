@@ -132,7 +132,7 @@
     font-weight: normal !important;
 }
 
-.hljs-params {
+.hljs-params, .hljs-bullet {
     color: #ffffff !important;
 }
 
@@ -140,7 +140,19 @@
     color: #ffd6ad !important;
 }
 
-.hljs-string {
+.hljs-name, .hljs-tag {
+    color: #b4f6d6 !important;
+}
+
+.hljs-number, .hljs-section {
+    color: #ff9d3d !important;
+}
+
+.hljs-symbol {
+    color: #3884ff !important;
+}
+
+.hljs-string, .hljs-subst {
     color: #71a7ff !important;
 }
 
@@ -148,3 +160,4 @@ span.hljs-built_in {
     color: #8ffaaa !important;
 }
 
+/* not sure: section */
