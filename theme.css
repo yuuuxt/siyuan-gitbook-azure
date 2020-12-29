@@ -115,10 +115,45 @@
 }
 
 
+/* kbd font */
+kbd {
+    font-family: var(--b3-font-family-code) !important;
+}
+
+/* block quote */
+blockquote {
+    background-color: var(--b3-theme-surface) !important;
+    border-color: var(--b3-theme-primary) !important;
+    border-radius: 0.2rem;
+    padding: 1rem !important;
+}
+
+/* link color */
+.vditor-ir__blockref {
+    color: var(--b3-theme-primary);
+}
+
+/* sidebar and tab bar */
+
+.b3-list--background .b3-list-item--focus {
+    background-color: #ffffff !important;
+    color: var(--b3-theme-primary) !important;
+}
+
+.b3-list--background .b3-list-item--focus > .b3-list-item__text {
+    color: var(--b3-theme-primary) !important;
+}
+
+.layout-tab-bar .item--focus {
+    background-color: #ffffff !important;
+    font-weight: bold !important;
+}
+
 /* code block - not complete yet*/
 .hljs {
     background: #183055 !important;
     background-image: none;
+    border-radius: 0.2rem !important;
     color: #ffffff !important;
 }
 
