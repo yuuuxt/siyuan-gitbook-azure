@@ -116,8 +116,13 @@
 
 
 /* kbd font */
-kbd {
+kbd{
     font-family: var(--b3-font-family-code) !important;
+}
+
+/* 流程图, 时序图, 甘特图 */
+.label, foreignObject, text, canvas {
+    font-family: var(--b3-font-family) !important;
 }
 
 /* block quote */
@@ -187,8 +192,9 @@ blockquote {
     color: #3884ff !important;
 }
 
-.hljs-string, .hljs-subst {
+.hljs-string, .hljs-subst, .hljs-attribute, .hljs-selector-tag {
     color: #71a7ff !important;
+    font-weight: normal !important;
 }
 
 span.hljs-built_in {
