@@ -4,11 +4,13 @@
   src: url("src/NotoSansSC-Regular.otf") format('opentype');
 }
 
+/* 
 @font-face {
   font-family: "Noto Serif SC";
   font-style:normal;
   src: url("src/NotoSerifSC-Medium.otf") format('opentype');
-}
+} 
+*/
 
 @font-face {
   font-family: "JetBrains Mono";
@@ -225,3 +227,10 @@ span.hljs-built_in {
 }
 
 /* not sure: section */
+
+
+/* table */
+/* .vditor-reset table td, .vditor-reset table th {
+    
+    border-top: none !important;
+} */
