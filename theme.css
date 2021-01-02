@@ -120,7 +120,6 @@
     fill: transparent;
 }
 
-
 /* kbd font */
 kbd{
     font-family: var(--b3-font-family-code) !important;
@@ -129,6 +128,24 @@ kbd{
 /* 流程图, 时序图, 甘特图 */
 .label, foreignObject, text, canvas {
     font-family: var(--b3-font-family) !important;
+}
+
+/* tag */
+/* copying code style */
+.vditor-ir__tag {
+    padding: 0em 0.8em;
+    margin: 0;
+    border-radius: 15px;
+    background-size: 20px 20px;
+    word-break: break-word;
+    white-space: pre-wrap;
+    background-color: var(--b3-vditor-mark-title-color);
+    color:#ffffff;
+    font-family: var(--b3-font-family-code);
+    font-size: 80%;
+    font-weight: normal;
+    text-decoration: none !important;
+
 }
 
 /* block quote */
