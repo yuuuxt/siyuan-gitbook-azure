@@ -5,6 +5,12 @@
 }
 
 @font-face {
+  font-family: "Noto Serif SC";
+  font-style:normal;
+  src: url("src/NotoSerifSC-Medium.otf") format('opentype');
+}
+
+@font-face {
   font-family: "JetBrains Mono";
   font-style:normal;
   src: url("src/JetBrainsMono-Regular.woff2") format('woff2');
@@ -13,7 +19,7 @@
 @font-face {
   font-family: "Noto Sans Mono CJK SC";
   font-style:normal;
-  src: url("src/NotoSansMonoCJKsc-Regular.otf") format('otf');
+  src: url("src/NotoSansMonoCJKsc-Regular.otf") format('opentype');
 }
 
 :root {
