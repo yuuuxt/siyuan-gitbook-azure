@@ -252,3 +252,7 @@ ol > li::before {
     font-size: 85%;
     font-weight: bold;
   }
+
+ol > li > p {
+    display: inline;
+}
