@@ -234,3 +234,21 @@ span.hljs-built_in {
     
     border-top: none !important;
 } */
+
+/* 列表 */
+
+ol {
+    counter-reset: counter;
+    list-style: none;
+  }
+
+ol > li {
+    counter-increment: counter;
+  } 
+
+ol > li::before {
+    content: counters(counter, '.') '. ';
+    font-family: var(--b3-font-family) ;
+    font-size: 85%;
+    font-weight: bold;
+  }
