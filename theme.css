@@ -251,7 +251,7 @@ ol > li::before {
     font-family: var(--b3-font-family) ;
     font-size: 85%;
     font-weight: bold;
-    margin-left: -19px;
+/*     margin-left: -19px;
     margin-bottom: -21px;
-    display: block;
+    display: block; */
   }
