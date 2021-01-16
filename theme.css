@@ -261,7 +261,16 @@ ol > li::before {
     font-family: var(--b3-font-family) ;
     font-size: 85%;
     font-weight: bold;
-    margin-left: -19px;
-    margin-bottom: -21px;
-    display: block;
+    /* margin-left: -19px;
+    margin-bottom: -21px; */
+    /* display: block; */
   }
+
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+    content:'';
+    border-left: 2px solid rgba(0, 0, 0, .05);
+    margin-left: 0.1em;
+}
