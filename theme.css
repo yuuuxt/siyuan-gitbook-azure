@@ -4,24 +4,10 @@
   src: url("src/NotoSansSC-Regular.otf") format('opentype');
 }
 
-/* 
-@font-face {
-  font-family: "Noto Serif SC";
-  font-style:normal;
-  src: url("src/NotoSerifSC-Medium.otf") format('opentype');
-} 
-*/
-
 @font-face {
   font-family: "JetBrains Mono";
   font-style:normal;
   src: url("src/JetBrainsMono-Regular.woff2") format('woff2');
-}
-
-@font-face {
-  font-family: "Noto Sans Mono CJK SC";
-  font-style:normal;
-  src: url("src/NotoSansMonoCJKsc-Regular.otf") format('opentype');
 }
 
 :root {
@@ -44,7 +30,7 @@
 
     /* 字体 */
     --b3-font-family: "Noto Sans SC", "Helvetica Neue", "Luxi Sans", "DejaVu Sans", "Hiragino Sans GB", "Microsoft Yahei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
-    --b3-font-family-code: "JetBrains Mono", "Noto Sans Mono CJK SC", mononoki, Consolas, "Liberation Mono", Menlo, Courier, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
+    --b3-font-family-code: "JetBrains Mono", "Noto Sans SC", mononoki, Consolas, "Liberation Mono", Menlo, Courier, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
 
     /* 线条 */
     --b3-border-color: rgba(0, 0, 0, .12);
