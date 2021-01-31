@@ -255,20 +255,28 @@ ol {
     list-style: none;
   }
 
+li > p {
+    margin-top: 0.1em !important;
+    margin-bottom: 0.1em !important;
+}
+
 ol > li {
     counter-increment: counter;
+    overflow: hidden;
   } 
 
 ol > li::before {
-    content: counters(counter, '.') '. ';
+    content: counters(counter, '.') '  ';
     font-family: var(--b3-font-family) ;
-    font-size: 85%;
     font-weight: bold;
+    float: left;
+    padding-left: 0em;
     /* margin-left: -19px;
     margin-bottom: -21px; */
     /* display: block; */
   }
 
+/* borderline */
 ul ul,
 ol ul,
 ul ol,
@@ -276,4 +284,15 @@ ol ol {
     content:'';
     border-left: 2px solid rgba(0, 0, 0, .05);
     margin-left: 0.1em;
+}
+
+/* additional space in p */
+.vditor-ir__node[data-type="img"] > img {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.vditor-ir__node[data-type="code-block"] > pre > code {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
