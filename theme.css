@@ -250,40 +250,43 @@ span.hljs-built_in {
 
 /* 列表 */
 
-ol {
+pre ol {
+    margin-left: -1.25em;
+    padding-left: -1.25em;
+}
+
+/* my settings */
+.vditor ol {
     counter-reset: counter;
     list-style: none;
   }
 
-li > p {
-    margin-top: 0.1em !important;
-    margin-bottom: 0.1em !important;
-}
-
-ol > li {
+.vditor ol > li {
     counter-increment: counter;
     overflow: hidden;
   } 
 
-ol > li::before {
-    content: counters(counter, '.') '  ';
+.vditor ol > li::before {
+    content: counters(counter, '.') '   ';
     font-family: var(--b3-font-family) ;
     font-weight: bold;
     float: left;
-    padding-left: 0em;
-    /* margin-left: -19px;
-    margin-bottom: -21px; */
-    /* display: block; */
   }
 
 /* borderline */
-ul ul,
-ol ul,
-ul ol,
-ol ol {
+.vditor ul ul,
+.vditor ul ol {
     content:'';
     border-left: 2px solid rgba(0, 0, 0, .05);
-    margin-left: 0.1em;
+    margin-left: -1em;
+    padding-left: 4em;
+}
+
+.vditor ol ul,
+.vditor ol ol {
+    content:'';
+    border-left: 2px solid rgba(0, 0, 0, .05);
+    margin-left: 0.25em;
 }
 
 /* additional space in p */
