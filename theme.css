@@ -44,7 +44,7 @@
     /* 页签 */
     /* --b3-tab-background: #f8f9fa; */
     /* 改成与theme-surface一样的颜色 */
-    --b3-tab-background: #f5f7f9;
+    --b3-tab-background: var(--b3-theme-surface);
     --b3-tab-background-hover: #e9eaeb;
 
     /* 提示 */
@@ -251,13 +251,6 @@ span.hljs-built_in {
 } */
 
 /* 列表 */
-
-pre ol {
-    margin-left: -1.25em;
-    padding-left: -1.25em;
-}
-
-/* my settings */
 .vditor ol {
     counter-reset: counter;
     list-style: none;
@@ -265,30 +258,31 @@ pre ol {
 
 .vditor ol > li {
     counter-increment: counter;
-    overflow: hidden;
-  } 
+} 
 
 .vditor ol > li::before {
     content: counters(counter, '.') '   ';
     font-family: var(--b3-font-family) ;
     font-weight: bold;
     float: left;
-  }
+    margin-left: -1.25em;
+}
 
 /* borderline */
 .vditor ul ul,
 .vditor ul ol {
     content:'';
     border-left: 2px solid rgba(0, 0, 0, .05);
-    margin-left: -1em;
-    padding-left: 4em;
+    margin-left: -1.05em;
+    padding-left: 3em;
 }
 
 .vditor ol ul,
 .vditor ol ol {
     content:'';
     border-left: 2px solid rgba(0, 0, 0, .05);
-    margin-left: 0.25em;
+    margin-left: -1em;    
+    padding-left: 3em;
 }
 
 /* additional space in p */
@@ -319,4 +313,9 @@ pre ol {
 
 .search__label .b3-form__icon-input {
     background-color: var(--b3-tab-background) ;
+}
+
+/* 与目前主题中文件树里的计数颜色统一 */
+.vditor-counter {
+    background-color: var(--b3-list-hover);
 }
