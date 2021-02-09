@@ -320,3 +320,8 @@ pre ol {
 .search__label .b3-form__icon-input {
     background-color: var(--b3-tab-background) ;
 }
+
+/* 与目前主题中文件树里的计数颜色统一 */
+.vditor-counter {
+    background-color: var(--b3-list-hover);
+}
