@@ -44,7 +44,7 @@
     /* 页签 */
     /* --b3-tab-background: #f8f9fa; */
     /* 改成与theme-surface一样的颜色 */
-    --b3-tab-background: #f5f7f9;
+    --b3-tab-background: var(--b3-theme-surface);
     --b3-tab-background-hover: #e9eaeb;
 
     /* 提示 */
