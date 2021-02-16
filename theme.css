@@ -321,3 +321,8 @@ span.hljs-built_in {
 .vditor-counter {
     background-color: var(--b3-list-hover);
 }
+
+/* font of queries */
+.vditor-ir__node--expand[data-type="block-query-embed"] > .vditor-ir__marker {
+    font-family: var(--b3-font-family-code) !important;
+}
