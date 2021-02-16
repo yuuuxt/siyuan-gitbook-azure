@@ -150,11 +150,13 @@ kbd{
 /* tag */
 /* copying code style */
 .vditor-ir__tag {
-    padding: 0.15em 0.8em;
+    display: inline-block;
+    padding: 0.05em 0.7em;
     margin: 0;
     border-radius: 15px;
-    background-size: 20px 20px;
-    word-break: break-word;
+    /* background-size: 20px 20px; */
+    /* word-break: break-word; */
+    cursor:pointer;
     white-space: pre-wrap;
     background-color: var(--b3-vditor-mark-title-color);
     color:#ffffff;
@@ -318,4 +320,9 @@ span.hljs-built_in {
 /* 与目前主题中文件树里的计数颜色统一 */
 .vditor-counter {
     background-color: var(--b3-list-hover);
+}
+
+/* font of queries */
+.vditor-ir__node--expand[data-type="block-query-embed"] > .vditor-ir__marker {
+    font-family: var(--b3-font-family-code) !important;
 }
