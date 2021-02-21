@@ -253,6 +253,10 @@ span.hljs-built_in {
 } */
 
 /* 列表 */
+.vditor ul > li{
+    list-style-type: circle;
+}
+
 .vditor ol {
     counter-reset: counter;
     list-style: none;
