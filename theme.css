@@ -260,7 +260,7 @@ span.hljs-built_in {
 .vditor ol {
     counter-reset: counter;
     list-style: none;
-  }
+}
 
 .vditor ol > li {
     counter-increment: counter;
@@ -273,6 +273,20 @@ span.hljs-built_in {
     float: left;
     margin-left: -1.25em;
 }
+
+/* 列表混排 */
+/* 只覆盖了一层的情况, 再往下嵌套未覆盖 */
+.vditor ul > li ol {
+    counter-reset: counter_mix_lv1;
+}
+.vditor ul > li ol li {
+    counter-increment: counter_mix_lv1;
+}
+
+.vditor ul > li ol > li::before {
+    content: counters(counter_mix_lv1, '.') '   ';
+}
+
 
 /* borderline */
 .vditor ul ul,
