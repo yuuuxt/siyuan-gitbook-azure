@@ -344,3 +344,8 @@ span.hljs-built_in {
 .vditor-ir__node--expand[data-type="block-query-embed"] > .vditor-ir__marker {
     font-family: var(--b3-font-family-code) !important;
 }
+
+/* 1.5px space between toolbar and tab bar */
+.vditor-toolbar {
+    padding: 1.5px 8px;
+}
