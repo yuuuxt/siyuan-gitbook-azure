@@ -9,7 +9,7 @@ Gitbook style theme for [SiYuan](github.com/siyuan-note/siyuan):
 
 Reference: 
 
-[Gitbook-Theme-for-Typora](https://github.com/16soundsofsilence/typora-gitbook-theme).
+[Gitbook-Theme-for-Typora](https://github.com/16soundsofsilence/typora-gitbook-theme)
 
 ## Contributing & Troubleshooting
 
