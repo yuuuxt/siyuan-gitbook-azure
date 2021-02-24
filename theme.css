@@ -97,8 +97,8 @@
     --b3-graph-hl-line: #4285f4;
 
     /* 编辑器工具栏高度 */
-    --b3-vditor-toolbar-height: 29px;
-    --b3-vditor-toolbar-height-space: 6px;
+    --b3-vditor-toolbar-height: 26px;
+    --b3-vditor-toolbar-height-space: 3px;
 
     /* 编辑器搜索颜色 */
     --b3-vditor-search-background: #ffe955;
@@ -348,4 +348,23 @@ span.hljs-built_in {
 /* 1.5px space between toolbar and tab bar */
 .vditor-toolbar {
     padding: 1.5px 8px;
+}
+
+/* tab adjustments */
+.layout-tab-bar .item {
+    padding: 5px 4px 2px 8px;
+}
+.layout-tab-bar .item__graphic{
+    margin-right: 6px;
+}
+.layout-tab-bar .item__close {
+    margin-left: 4px;
+}
+
+.vditor-toolbar {
+    padding: 1.5px 8px 0.5px 8px
+}
+
+.vditor-counter.b3-tooltips.b3-tooltips__w {
+    margin: 3px 3px 0 0 !important
 }
