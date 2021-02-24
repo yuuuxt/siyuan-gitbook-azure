@@ -1,12 +1,16 @@
 # Gitbook Theme for Siyuan
 
+Gitbook style theme for [SiYuan](github.com/siyuan-note/siyuan): 
+
+- based on default `daylight` theme with (subjective) modifications;
+- bundled with `Noto Sans (思源黑体)` and `JetBrains Mono` as default fonts.
+
 ![preview](./preview.png)
 
-Gitbook 风格的思源笔记主题, 参考了[Gitbook-Theme-for-Typora](https://github.com/16soundsofsilence/typora-gitbook-theme).
+Reference: 
 
-> 仅基于默认daylight主题小改配色; 
-> 字体根据个人偏好使用思源黑体和JetBrains Mono.
+[Gitbook-Theme-for-Typora](https://github.com/16soundsofsilence/typora-gitbook-theme)
 
-## Contributing
+## Contributing & Troubleshooting
 
-粗粗赶制自用, 欢迎讨论: [提Issue](https://github.com/yuuuxt/siyuan-gitbook-azure/issues/new)
+[New Issue](https://github.com/yuuuxt/siyuan-gitbook-azure/issues/new)
