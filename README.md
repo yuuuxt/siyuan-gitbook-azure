@@ -1,6 +1,6 @@
 # Gitbook Theme for Siyuan
 
-Gitbook style theme for [SiYuan](github.com/siyuan-note/siyuan): 
+Gitbook style theme for [SiYuan](http://github.com/siyuan-note/siyuan): 
 
 - based on default `daylight` theme with (subjective) modifications;
 - bundled with `Noto Sans (思源黑体)` and `JetBrains Mono` as default fonts.
