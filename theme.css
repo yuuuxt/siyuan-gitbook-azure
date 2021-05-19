@@ -386,3 +386,10 @@ span.hljs-built_in {
 .vditor-counter.b3-tooltips.b3-tooltips__w {
     margin: 3px 3px 0 0 !important
 }
+
+/* https://github.com/yuuuxt/siyuan-gitbook-azure/issues/22 */
+/* haven't tested by myself, as I've had siyuan updated to 1.2 alpha version */
+/* 代办事项前不需要原来默认的list-style */
+.vditor .vditor-task{
+    list-style: none;
+}
