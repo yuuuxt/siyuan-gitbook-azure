@@ -25,6 +25,8 @@
     --b3-theme-secondary: #f3a92f;
     --b3-theme-background: #ffffff;
     --b3-theme-surface: #f5f7f9;
+    /* 原来透明度是0.86, 暂改为不透明 */
+    --b3-theme-surface-light: rgba(245, 247, 249, 1); 
     --b3-theme-error: #d23f31;
 
     /* 文字颜色 */
@@ -37,6 +39,8 @@
     /* 字体 */
     --b3-font-family: "Noto Sans", "Noto Sans SC", "Helvetica Neue", "Luxi Sans", "DejaVu Sans", "Hiragino Sans GB", "Microsoft Yahei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
     --b3-font-family-code: "JetBrains Mono", "Noto Sans SC", mononoki, Consolas, "Liberation Mono", Menlo, Courier, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
+    /* todo */
+    --b3-font-family-graph: mononoki;
 
     /* 线条 */
     --b3-border-color: rgba(0, 0, 0, .1);
@@ -67,16 +71,32 @@
     --b3-card-success-background: rgb(237, 247, 237);
 
     /* 自定义文字 */
-    --b3-font-color1: #f5539e;
-    --b3-font-color2: #944194;
-    --b3-font-color3: #65b84d;
-    --b3-font-color4: #f5822e;
-    --b3-font-background1: rgba(217, 211, 215, 0.5);
-    --b3-font-background2: rgba(255, 193, 153, 0.5);
-    --b3-font-background3: rgba(189, 201, 255, 0.5);
-    --b3-font-background4: rgba(239, 218, 251, 0.5);
-    --b3-font-background5: rgba(234, 202, 220, 0.5);
-    --b3-font-background6: rgba(253, 198, 200, 0.5);
+    --b3-font-color1: var(--b3-card-error-color);
+    --b3-font-color2: var(--b3-card-warning-color);
+    --b3-font-color3: var(--b3-card-info-color);
+    --b3-font-color4: var(--b3-card-success-color);
+    --b3-font-color5: var(--b3-theme-on-surface);
+    --b3-font-color6: var(--b3-theme-primary);
+    --b3-font-color7: var(--b3-theme-secondary);
+    --b3-font-color8: var(--b3-theme-error);
+    --b3-font-color9: #f5539e;
+    --b3-font-color10: #944194;
+    --b3-font-color11: #65b84d;
+    --b3-font-color12: #f5822e;
+    --b3-font-color13: var(--b3-theme-background);
+    --b3-font-background1: var(--b3-card-error-background);
+    --b3-font-background2: var(--b3-card-warning-background);
+    --b3-font-background3: var(--b3-card-info-background);
+    --b3-font-background4: var(--b3-card-success-background);
+    --b3-font-background5: var(--b3-theme-surface);
+    --b3-font-background6: var(--b3-theme-primary-light);
+    --b3-font-background7: rgba(217, 211, 215, 0.5);
+    --b3-font-background8: rgba(255, 193, 153, 0.5);
+    --b3-font-background9: rgba(189, 201, 255, 0.5);
+    --b3-font-background10: rgba(239, 218, 251, 0.5);
+    --b3-font-background11: rgba(234, 202, 220, 0.5);
+    --b3-font-background12: rgba(253, 198, 200, 0.5);
+    --b3-font-background13: var(--b3-theme-on-background);
 
     /* 动画效果 */
     --b3-transition: all .15s cubic-bezier(0, 0, .2, 1) 0ms;
@@ -115,45 +135,54 @@
     --b3-graph-hl-line: #4285f4;
 
     /* 编辑器工具栏高度 */
-    --b3-vditor-toolbar-height: 26px;
-    --b3-vditor-toolbar-height-space: 3px;
+    /* --b3-protyle-toolbar-height: 26px; */
+    --b3-protyle-toolbar-height-space: 3px;
 
     /* 编辑器搜索颜色 */
-    --b3-vditor-search-background: #ffe955;
-    --b3-vditor-search-border-color: #f2e680;
-    --b3-vditor-search-current-background: #a5d3fe;
+    --b3-protyle-search-background: #ffe955;
+    --b3-protyle-search-border-color: #f2e680;
+    --b3-protyle-search-current-background: #a5d3fe;
 
     /* 代码片段背景 */
-    --b3-vditor-code-background: rgba(230, 236, 241, 1);
+    --b3-protyle-code-background: rgba(230, 236, 241, 1);
 
-    /* 即时渲染标记符颜色 */
-    --b3-vditor-mark-heading-color: #660e7a;
-    --b3-vditor-mark-title-color: #808080;
-    --b3-vditor-mark-em-color: #0033b3;
-    --b3-vditor-mark-strong-color: #0033b3;
-    --b3-vditor-mark-backslash-color: #0033b3;
-    --b3-vditor-mark-s-color: #5f6368;
-    --b3-vditor-mark-mark-color: #5f6368;
-    --b3-vditor-mark-link-color: #008000;
-    --b3-vditor-mark-bracket-color: #0000ff;
-    --b3-vditor-mark-paren-color: #008000;
-    --b3-vditor-mark-block-color: #660e7a;
-    --b3-vditor-mark-tag-color: #0033b3;
-
-    /* 即时渲染行内元素颜色 */
-    --b3-vditor-inline-strong-color: #202124;
-    --b3-vditor-inline-em-color: #202124;
-    --b3-vditor-inline-s-color: #202124;
-    --b3-vditor-inline-link-color: #4285f4;
-    --b3-vditor-inline-mark-background: #ffe955;
-    --b3-vditor-inline-mark-color: #202124;
-    --b3-vditor-inline-tag-color: #5f6368;
-    --b3-vditor-inline-blockref-color: #660e7a;
+    /* 所见即所得行内元素颜色 */
+    --b3-protyle-inline-strong-color: #202124;
+    --b3-protyle-inline-em-color: #202124;
+    --b3-protyle-inline-s-color: #202124;
+    --b3-protyle-inline-link-color: #4285f4;
+    --b3-protyle-inline-mark-background: #ffe955;
+    --b3-protyle-inline-mark-color: #202124;
+    --b3-protyle-inline-tag-color: #5f6368;
+    --b3-protyle-inline-blockref-color: #660e7a;
 }
 
-.language-graphviz .graph > polygon {
+
+/* 不想调下面这两个了, 先这样吧 */
+
+/* 奇怪的界面调整 */
+/* body.fn__flex-column > .fn__flex-1 {
+    min-height:0px !important;
+} */
+
+/* 编辑器工具栏高度 */
+/* #toolbar {
+    height: 26px; 
+} */
+
+/* 虽然这样和最小化没有严格对齐, 应该没人发现吧 */
+.toolbar__item:not(.b3-tooltips__sw) {
+    padding:14px 8px;
+}
+
+.protyle-breadcrumb {
+    padding: 0 8px 2px;
+}
+
+/* 应该没用了 */
+/* .language-graphviz .graph > polygon {
     fill: transparent;
-}
+} */
 
 /* kbd font */
 kbd{
@@ -167,7 +196,7 @@ kbd{
 
 /* tag */
 /* copying code style */
-.vditor-ir__tag {
+span[data-type="tag"]:not(.dock__item) {
     display: inline-block;
     padding: 0.05em 0.7em;
     margin: 0;
@@ -176,35 +205,44 @@ kbd{
     /* word-break: break-word; */
     cursor:pointer;
     white-space: pre-wrap;
-    background-color: var(--b3-vditor-mark-title-color);
-    color:#ffffff;
+    background-color: #808080;
+    color:#ffffff !important;
     font-family: var(--b3-font-family-code);
     font-size: 80%;
     font-weight: normal;
     text-decoration: none !important;
     text-align: center;
+    /* 问题: 文字居中, 左下角按钮 */
 }
 
 /* block quote */
-blockquote {
+.bq {
     background-color: var(--b3-theme-surface) !important;
     border-color: var(--b3-theme-primary) !important;
     border-radius: 0.2rem;
-    padding: 1rem !important;
+    /* 加了会有hover的图标的错位 */
+    /* padding: 1rem !important; */
+    /* 问题: 文字居中 */
 }
+
 
 /* link color */
-.vditor-ir__blockref {
-    color: var(--b3-theme-primary);
+.b3-list-item--focus {
+    background-color: #ffffff !important;
+    color: var(--b3-theme-primary) !important;
 }
 
-/* sidebar and tab bar */
+.b3-list-item--focus > .b3-list-item__first > .b3-list-item__text, 
+.b3-list-item--focus >.b3-list-item__meta {
+    color: var(--b3-theme-primary) !important;
+}
 
 .b3-list--background .b3-list-item--focus {
     background-color: #ffffff !important;
     color: var(--b3-theme-primary) !important;
 }
 
+/* sidebar and tab bar */
 .b3-list--background .b3-list-item--focus > .b3-list-item__text {
     color: var(--b3-theme-primary) !important;
 }
@@ -215,6 +253,7 @@ blockquote {
 }
 
 /* code block - not complete yet*/
+
 .hljs {
     background: #183055 !important;
     background-image: none;
@@ -270,70 +309,6 @@ span.hljs-built_in {
     border-top: none !important;
 } */
 
-/* 列表 */
-.vditor ul > li{
-    list-style-type: circle;
-}
-
-.vditor ol {
-    counter-reset: counter;
-    list-style: none;
-}
-
-.vditor ol > li {
-    counter-increment: counter;
-} 
-
-.vditor ol > li::before {
-    content: counters(counter, '.') '   ';
-    font-family: var(--b3-font-family) ;
-    font-weight: bold;
-    float: left;
-    margin-left: -1.25em;
-}
-
-/* 列表混排 */
-/* 只覆盖了一层的情况, 再往下嵌套未覆盖 */
-.vditor ul > li ol {
-    counter-reset: counter_mix_lv1;
-}
-.vditor ul > li ol li {
-    counter-increment: counter_mix_lv1;
-}
-
-.vditor ul > li ol > li::before {
-    content: counters(counter_mix_lv1, '.') '   ';
-}
-
-
-/* borderline */
-.vditor ul ul,
-.vditor ul ol {
-    content:'';
-    border-left: 2px solid rgba(0, 0, 0, .05);
-    margin-left: -1.05em;
-    padding-left: 3em;
-}
-
-.vditor ol ul,
-.vditor ol ol {
-    content:'';
-    border-left: 2px solid rgba(0, 0, 0, .05);
-    margin-left: -1em;    
-    padding-left: 3em;
-}
-
-/* additional space in p */
-.vditor-ir__node[data-type="img"] > img {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-}
-
-.vditor-ir__node[data-type="code-block"] > pre > code {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-}
-
 /* 窗口美化 */
 
 .dock, .dock__item, .toolbar, .fn__flex-column{
@@ -344,29 +319,14 @@ span.hljs-built_in {
     background-color: var(--b3-tab-background);
 }
 
-.dock__item--active {
-    /* background-color: #ffffff; */
-    color: var(--b3-theme-primary)
-}
-
 .search__label .b3-form__icon-input {
     background-color: var(--b3-tab-background) ;
 }
 
-/* 与目前主题中文件树里的计数颜色统一 */
-.vditor-counter {
-    background-color: var(--b3-list-hover);
-}
-
 /* font of queries */
-.vditor-ir__node--expand[data-type="block-query-embed"] > .vditor-ir__marker {
+/* .vditor-ir__node--expand[data-type="block-query-embed"] > .vditor-ir__marker {
     font-family: var(--b3-font-family-code) !important;
-}
-
-/* 1.5px space between toolbar and tab bar */
-.vditor-toolbar {
-    padding: 1.5px 8px;
-}
+} */
 
 /* tab adjustments */
 .layout-tab-bar .item {
@@ -377,19 +337,4 @@ span.hljs-built_in {
 }
 .layout-tab-bar .item__close {
     margin-left: 4px;
-}
-
-.vditor-toolbar {
-    padding: 1.5px 8px 0.5px 8px
-}
-
-.vditor-counter.b3-tooltips.b3-tooltips__w {
-    margin: 3px 3px 0 0 !important
-}
-
-/* https://github.com/yuuuxt/siyuan-gitbook-azure/issues/22 */
-/* haven't tested by myself, as I've had siyuan updated to 1.2 alpha version */
-/* 代办事项前不需要原来默认的list-style */
-.vditor .vditor-task{
-    list-style: none;
 }
