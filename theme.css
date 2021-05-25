@@ -176,7 +176,10 @@
 }
 
 .protyle-breadcrumb {
+    /* background-color: var(--b3-theme-surface) ; */
     padding: 0 8px 2px;
+    /* left: 0px; */
+    right: 0px;
 }
 
 .protyle-preview {
