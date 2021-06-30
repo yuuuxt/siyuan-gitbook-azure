@@ -26,8 +26,9 @@
     --b3-theme-background: #ffffff;
     --b3-theme-surface: #f5f7f9;
     /* 原来透明度是0.86, 暂改为不透明 */
-    --b3-theme-surface-light: rgba(245, 247, 249, 1); 
-    --b3-theme-error: #d23f31;
+    /* rgba(245, 247, 249, 1) */
+    --b3-theme-surface-light: #f5f7f9; 
+    --b3-theme-error: #ff4642;
 
     /* 文字颜色 */
     --b3-theme-on-primary: #fff;
@@ -154,7 +155,7 @@
     --b3-protyle-inline-mark-background: #ffe955;
     --b3-protyle-inline-mark-color: #202124;
     --b3-protyle-inline-tag-color: #5f6368;
-    --b3-protyle-inline-blockref-color: #660e7a;
+    --b3-protyle-inline-blockref-color: var(--b3-protyle-inline-tag-color);
 }
 
 
@@ -178,8 +179,6 @@
 .protyle-breadcrumb {
     /* background-color: var(--b3-theme-surface) ; */
     padding: 0 8px 2px;
-    /* left: 0px; */
-    right: 0px;
 }
 
 .protyle-preview {
@@ -348,4 +347,20 @@ span.hljs-built_in {
 }
 .layout-tab-bar .item__close {
     margin-left: 4px;
+}
+
+/* title font */
+
+.protyle-title__input {
+    display: none;
+    font-weight: bold;
+    /* text-transform:uppercase; */
+}
+
+/* block-ref */
+span[data-type="block-ref"] {
+    font-family: var(--b3-font-family-code);
+    color: var(--b3-protyle-inline-blockref-color);
+    background-color: var(--b3-theme-surface-light);
+    border-bottom: 2px dotted var(--b3-theme-primary-light);
 }
