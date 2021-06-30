@@ -348,3 +348,11 @@ span.hljs-built_in {
 .layout-tab-bar .item__close {
     margin-left: 4px;
 }
+
+/* title font */
+
+.protyle-title__input {
+    display: none;
+    font-weight: bold;
+    /* text-transform:uppercase; */
+}
