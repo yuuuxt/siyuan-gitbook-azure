@@ -377,3 +377,8 @@ span[data-type="block-ref"] {
 .protyle-util > .fn__flex-column> input {
     font-family: var(--b3-font-family-code);
 }
+
+/* tab color */
+ul.layout-tab-bar {
+    background-color: var(--b3-theme-surface);
+}
