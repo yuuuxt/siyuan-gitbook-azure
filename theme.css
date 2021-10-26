@@ -364,3 +364,21 @@ span[data-type="block-ref"] {
     background-color: var(--b3-theme-surface-light);
     border-bottom: 2px dotted var(--b3-theme-primary-light);
 }
+
+/* codeblock language setting */
+.protyle-action__language {
+    font-family: var(--b3-font-family-code);
+}
+
+.protyle-util > .fn__flex-column {
+    font-family: var(--b3-font-family-code);
+}
+
+.protyle-util > .fn__flex-column> input {
+    font-family: var(--b3-font-family-code);
+}
+
+/* tab color */
+ul.layout-tab-bar {
+    background-color: var(--b3-theme-surface);
+}
